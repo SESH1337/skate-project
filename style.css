@@ -1,0 +1,132 @@
+html, body{
+  max-height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+  background-color:#06162f;
+  height: 100%
+
+
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainSlider {
+  display: flex;
+  justify-content: center;
+}
+.boxSlider {
+  width: 900px;
+  height: 100%;
+  display: flex;
+}
+.mainSlider{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: 15px;
+}
+.slideSize {
+  /* width: 600px; */
+  height: 100%;
+  display: flex;
+  display: none;
+}
+
+ #firstSlide {
+  display: block;
+}
+ /* #secSlide {
+  display: none;
+}  */
+/* #thirdSlide {
+  display: none;
+}  */
+
+#button-left{
+  background-color:#FFF5EE;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  position: relative;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  background-color: #06162f;
+  transition: 0.2s;
+  border:3px solid black;
+}
+
+#button-left:hover{
+  color:#255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 0.2s;
+}
+a span{
+  position: absolute;
+  display: block;
+}
+
+a span:nth-child(1){
+  top:0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+}
+a:hover span:nth-chil(1){
+  left: 100%;
+  transition:1s;
+}
+
+#button-right{
+  background-color:#FFF5EE;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 100px;
+  border:3px solid black;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  position: relative;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  background-color: #06162f;
+  transition: 0.2s;
+
+}
+
+#button-right:hover{
+  color:#255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 0.2s;
+}
+
+.p-1{
+  font-size: 25px;
+  font-family: "ALKDots", sans-serif;
+  font-weight: bolder;
+
+
+}
+.p-2{
+  font-size: 25px;
+  font-family: "ALKDots", sans-serif;
+font-weight: bold;
+}
