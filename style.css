@@ -66,6 +66,7 @@ body {
   background-color: #06162f;
   transition: 0.2s;
   border:3px solid black;
+  border-radius:0px 50px;
 }
 
 #button-left:hover{
@@ -108,7 +109,7 @@ a:hover span:nth-chil(1){
   font-size: 18px;
   background-color: #06162f;
   transition: 0.2s;
-
+  border-radius:50px 0px;
 }
 
 #button-right:hover{

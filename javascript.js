@@ -24,25 +24,36 @@ let currentSlide = 0;
         SliderAllSelect[i].style.display = "none";
       }
     }
+
+
     function slideRight(){
       reset();
+
       SliderAllSelect[currentSlide + 1].style.display = "block";
-      currentSlide++
-    }
+      currentSlide++;
+
+      }
+
+
 
     function slideLeft(){
       reset();
       SliderAllSelect[currentSlide - 1].style.display = "block";
-      currentSlide--
-    }
+  
+      currentSlide--;
+      }
+    
+
 
 
 buttonRight.addEventListener("click", function(){
-  slideRight()
+  slideRight();
 });
 
 buttonLeft.addEventListener("click", function(){
-  slideLeft()
+  slideLeft();
+
+
 });
 
 
