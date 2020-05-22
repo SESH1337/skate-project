@@ -27,8 +27,12 @@ let currentSlide = 0;
 
 
     function slideRight(){
+      
       reset();
-
+      let nextSlide = currentSlide + 1;
+      if(nextSlide >= SliderAllSelect.length){
+        currentSlide = -1;
+      }
       SliderAllSelect[currentSlide + 1].style.display = "block";
       currentSlide++;
 
@@ -38,11 +42,19 @@ let currentSlide = 0;
 
     function slideLeft(){
       reset();
-      SliderAllSelect[currentSlide - 1].style.display = "block";
-  
-      currentSlide--;
+      let prevSlide = currentSlide - 1;
+            if(prevSlide <= SliderAllSelect.length){
+              currentSlide--;
+            }
+            if(prevSlide === SliderAllSelect[0]){
+              SliderAllSelect[0].style.display = "block";
+            }
+            SliderAllSelect[currentSlide - 1].style.display = "block";
+        
+            currentSlide--;
+          
       }
-    
+     
 
 
 
